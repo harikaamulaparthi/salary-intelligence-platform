@@ -6,7 +6,7 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-model_path = Path(__file__).resolve().parent.parent / "salary_intelligence_model.pkl"
+model_path = Path(__file__).resolve().parent / "salary_intelligence_model.pkl"
 model = joblib.load(model_path)
 
 
