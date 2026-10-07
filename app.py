@@ -246,7 +246,7 @@ if st.button("Analyze Compensation", key="analyze"):
     }
 
     response = requests.post(
-        "http://127.0.0.1:8000/predict",
+    "https://salary-intelligence-platform-1.onrender.com/predict",
         json=employee_data
     )
 
@@ -334,7 +334,7 @@ experience_data = {
 }
 
 experience_response = requests.post(
-    "http://127.0.0.1:8000/predict",
+    "https://salary-intelligence-platform-1.onrender.com/predict",
     json=experience_data
 )
 
@@ -385,7 +385,7 @@ education_sim_data = {
 }
 
 education_response = requests.post(
-    "http://127.0.0.1:8000/predict",
+    "https://salary-intelligence-platform-1.onrender.com/predict",
     json=education_sim_data
 )
 
