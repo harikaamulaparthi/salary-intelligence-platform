@@ -31,4 +31,5 @@ def predict_salary(data: EmployeeData):
 
     return {
         "predicted_salary": float(prediction[0])
-    }s
+    }
+
