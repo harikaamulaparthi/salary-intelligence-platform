@@ -31,7 +31,10 @@ st.markdown(
     /* ALL INPUT BOXES */
     div[data-testid="stNumberInput"] > div,
     div[data-testid="stNumberInput"] > div > div,
-    div[data-baseweb="select"] > div {{
+    div[data-baseweb="select"],
+    div[data-baseweb="select"] > div,
+    div[data-baseweb="select"] > div > div,
+    div[data-baseweb="select"] [role="combobox"] {{
         background-color: #ffffff !important;
         background: #ffffff !important;
         color: #17324d !important;
