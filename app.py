@@ -28,16 +28,14 @@ st.markdown(
         background-attachment: fixed;
     }}
 
-    /* ALL INPUT BOXES */
+    /* ALL INPUT BOXES - WHITE */
+
+    /* Number input outer box */
     div[data-testid="stNumberInput"] > div,
-    div[data-testid="stNumberInput"] > div > div,
-    div[data-baseweb="select"],
-    div[data-baseweb="select"] > div,
-    div[data-baseweb="select"] > div > div,
-    div[data-baseweb="select"] [role="combobox"] {{
+    div[data-testid="stNumberInput"] [data-baseweb="input"],
+    div[data-testid="stNumberInput"] [data-baseweb="input"] > div {{
         background-color: #ffffff !important;
         background: #ffffff !important;
-        color: #17324d !important;
         border-radius: 12px !important;
         border: 1px solid #b8c7d9 !important;
     }}
@@ -50,15 +48,48 @@ st.markdown(
         -webkit-text-fill-color: #17324d !important;
     }}
 
-    /* Dropdown text */
-    div[data-baseweb="select"] input,
-    div[data-baseweb="select"] span,
-    div[data-baseweb="select"] div {{
+    /* Number +/- buttons */
+    div[data-testid="stNumberInput"] button {{
+        background-color: #ffffff !important;
+        background: #ffffff !important;
         color: #17324d !important;
     }}
 
-    /* Dropdown selected value */
-    div[data-baseweb="select"] [data-testid="stMarkdownContainer"] {{
+    /* Dropdown outer box */
+    div[data-baseweb="select"] > div,
+    div[data-baseweb="select"] > div > div,
+    div[data-baseweb="select"] [role="combobox"] {{
+        background-color: #ffffff !important;
+        background: #ffffff !important;
+        color: #17324d !important;
+        border-radius: 12px !important;
+        border: 1px solid #b8c7d9 !important;
+    }}
+
+    /* Dropdown text */
+    div[data-baseweb="select"] span,
+    div[data-baseweb="select"] input,
+    div[data-baseweb="select"] [role="combobox"] {{
+        color: #17324d !important;
+        -webkit-text-fill-color: #17324d !important;
+    }}
+
+    /* Dropdown arrow */
+    div[data-baseweb="select"] svg {{
+        fill: #17324d !important;
+        color: #17324d !important;
+    }}
+
+    /* Dropdown menu */
+    ul[data-baseweb="menu"],
+    ul[data-baseweb="menu"] li {{
+        background-color: #ffffff !important;
+        color: #17324d !important;
+    }}
+
+    /* Dropdown hover */
+    ul[data-baseweb="menu"] li:hover {{
+        background-color: #eef5fb !important;
         color: #17324d !important;
     }}
 
@@ -72,28 +103,6 @@ st.markdown(
     div[data-testid="stSlider"] label {{
         color: #17324d !important;
         font-weight: 600 !important;
-    }}
-
-    /* Number input +/- buttons */
-    div[data-testid="stNumberInput"] button {{
-        background-color: #ffffff !important;
-        color: #17324d !important;
-    }}
-
-    /* Dropdown menu */
-    ul[data-baseweb="menu"] {{
-        background-color: #ffffff !important;
-    }}
-
-    ul[data-baseweb="menu"] li {{
-        background-color: #ffffff !important;
-        color: #17324d !important;
-    }}
-
-    /* Dropdown hover */
-    ul[data-baseweb="menu"] li:hover {{
-        background-color: #eef5fb !important;
-        color: #17324d !important;
     }}
 
     </style>
